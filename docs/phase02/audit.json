@@ -1,0 +1,47 @@
+{
+  "audit_before": {
+    "expert_blueprints": 824,
+    "hidden_layers_per_expert": 16,
+    "hidden_width": 2048,
+    "expert_parameters_each": 64061696,
+    "logical_expert_parameters": 52786837504,
+    "router_parameters": 211768,
+    "logical_total_parameters": 52787049272,
+    "resident_experts": [],
+    "resident_parameters": 211768,
+    "meta_blueprint_parameters": 52786837504,
+    "trained_status": "not_established",
+    "resident_weight_bytes": 847072
+  },
+  "route": {
+    "selected": [
+      "N684"
+    ],
+    "weights": [
+      1.0
+    ],
+    "active_expert_parameters": 64061696,
+    "router_parameters": 211768
+  },
+  "finite": true,
+  "shape": [
+    1,
+    256
+  ],
+  "audit_after": {
+    "expert_blueprints": 824,
+    "hidden_layers_per_expert": 16,
+    "hidden_width": 2048,
+    "expert_parameters_each": 64061696,
+    "logical_expert_parameters": 52786837504,
+    "router_parameters": 211768,
+    "logical_total_parameters": 52787049272,
+    "resident_experts": [
+      "N684"
+    ],
+    "resident_parameters": 64273464,
+    "meta_blueprint_parameters": 52786837504,
+    "trained_status": "not_established",
+    "resident_weight_bytes": 257093856
+  }
+}

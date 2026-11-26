@@ -3,8 +3,8 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "aion-core"
-version = "0.1.0"
-description = "AION phase 1 research infrastructure"
+version = "0.2.0"
+description = "AION phase 1 and 2 research infrastructure"
 requires-python = ">=3.11,<3.14"
 dependencies = ["pydantic>=2.10,<3", "psutil>=6,<8"]
 [project.optional-dependencies]

@@ -1,2 +1,2 @@
-"""AION phase 1: infrastructure only, not a trained game agent."""
-__version__ = '0.1.0'
+"""AION phases 1–2: research infrastructure, not a trained game agent."""
+__version__ = '0.2.0'

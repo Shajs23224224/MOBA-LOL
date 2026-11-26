@@ -1,4 +1,4 @@
-# AION — Fase 1 / 0.1.0
+# AION — Fases 1 y 2 / 0.2.0
 
 Infraestructura ejecutable de investigación. **No es todavía un agente de League of Legends, ni un modelo entrenado.** Esta versión sólo ejecuta diagnóstico y servicios internos. No captura pantalla, no controla juegos, no descarga modelos y no contiene un entrenador ni simulador.
 
@@ -39,3 +39,7 @@ aion/catalog.py: catálogo; contracts.py: mensajes tipados; bus.py: mensajería 
 - Los contratos no habilitan acciones sobre juegos. El único entorno aceptado por configuración es diagnostics. La integración futura requiere un entorno propio o autorización expresa del titular. No se incluye código de evasión, inyección o automatización del cliente oficial.
 - No hay instalador ni build final todavía. La fase 2 debe crear redes reales y medir parámetros únicos, empezando por un subconjunto explícito según presupuesto. Nunca contar un catálogo, tensores meta ni la prueba diagnóstica como redes entrenadas.
 - El PDF maestro original se conserva en el ZIP de la fase 1, fuera de este repositorio. El manifiesto puede regenerarse con python -m aion architecture --output docs/architecture.json.
+
+## Fase 2
+
+Se añade el banco neuronal de 824 expertos con estructuras meta, materialización bajo demanda y enrutamiento top-k. Consulte [informe de Fase 2](docs/phase02/README.md) para ejecución, pruebas, parámetros y límites. El núcleo original de Fase 1 permanece disponible.

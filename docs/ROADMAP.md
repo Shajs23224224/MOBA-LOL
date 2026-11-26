@@ -3,7 +3,7 @@
 | Fase | Alcance | Estado |
 |---|---|---|
 | 1 | Núcleo local, catálogo, contratos, almacenamiento, recursos, diagnóstico | Entregado; ver informe de pruebas |
-| 2 | 824 redes principales reales, enrutamiento y auditoría | Pendiente |
+| 2 | 824 módulos PyTorch, materialización selectiva y auditoría | Prototipo verificado; entrenamiento y materialización completa pendientes |
 | 3 | Modelos visuales preentrenados e integración | Pendiente |
 | 4 | 160 agentes expertos funcionales | Pendiente |
 | 5 | Memoria cognitiva y estado del mundo | Pendiente |
