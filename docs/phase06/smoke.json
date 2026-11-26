@@ -1,0 +1,40 @@
+{
+  "mcts": {
+    "selected": "large",
+    "scores": [
+      {
+        "option": "large",
+        "visits": 255,
+        "value": 5.5
+      },
+      {
+        "option": "small",
+        "visits": 1,
+        "value": 1.0
+      }
+    ],
+    "iterations": 256
+  },
+  "beam": {
+    "path": [
+      "large",
+      "finish"
+    ],
+    "value": 5.5,
+    "expanded": 3
+  },
+  "parallel": [
+    {
+      "option": "large",
+      "visits": 128,
+      "value": 5.5
+    },
+    {
+      "option": "small",
+      "visits": 128,
+      "value": 1.0
+    }
+  ],
+  "jax_version": "0.9.0.1",
+  "mctx_available": false
+}
