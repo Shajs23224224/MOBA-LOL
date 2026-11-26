@@ -1,4 +1,4 @@
-# AION — Fases 1–3 / 0.3.0
+# AION — Fases 1–3 / 0.3.1
 
 Infraestructura ejecutable de investigación. **No es todavía un agente de League of Legends, ni un modelo entrenado.** Esta versión sólo ejecuta diagnóstico y servicios internos. No captura pantalla, no controla juegos, no descarga modelos y no contiene un entrenador ni simulador.
 
@@ -47,3 +47,7 @@ Se añade el banco neuronal de 824 expertos con estructuras meta, materializaci�
 ## Fase 3 (parcial)
 
 Canal de visión para imágenes locales, OpenCV, OCR Tesseract y puente hacia los expertos neuronales. Los adaptadores de modelos externos todavía requieren pesos y validación. Consulte [informe de Fase 3](docs/phase03/README.md). Las fases anteriores se conservan.
+
+## Fase 3B
+
+Cuatro adaptadores adicionales (OmniParser V2, SAM2, ByteTrack, PaddleOCR), con contratos probados pero pesos y backends externos pendientes. Consulte [informe de Fase 3B](docs/phase03b/README.md).

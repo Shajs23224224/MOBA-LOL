@@ -1,0 +1,5 @@
+Hugging Face OmniParser V2 icon_detect/model.pt: curl (6) Could not resolve host: huggingface.co
+Meta sam2.1_hiera_tiny.pt: curl (28) Resolving timed out after 5001 milliseconds
+Paddle PP-OCRv5_mobile_det_infer.tar: curl (6) Could not resolve host: paddle-model-ecology.bj.bcebos.com
+pip download --no-deps --retries 0 --timeout 5 supervision==0.26.1: ERROR: No matching distribution found for supervision==0.26.1
+No new weights or packages obtained.

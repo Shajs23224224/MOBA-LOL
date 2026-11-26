@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "aion-core"
-version = "0.3.0"
+version = "0.3.1"
 description = "AION research infrastructure and image perception prototype"
 requires-python = ">=3.11,<3.14"
 dependencies = ["pydantic>=2.10,<3", "psutil>=6,<8"]
@@ -12,6 +12,8 @@ neural = ["torch>=2.6,<3", "safetensors>=0.5,<1"]
 dev = ["pytest>=8,<10"]
 vision = ["opencv-python-headless>=4.10,<5", "numpy>=1.26,<3", "Pillow>=10,<13"]
 vision-hf = ["transformers>=4.57,<5", "torchvision", "accelerate>=1,<2"]
+vision-track = ["supervision==0.26.1"]
+vision-paddle = ["paddleocr>=3.3,<3.4"]
 [project.scripts]
 aion = "aion.cli:main"
 [tool.setuptools.packages.find]
