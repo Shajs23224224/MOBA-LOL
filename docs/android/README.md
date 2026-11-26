@@ -24,3 +24,7 @@ Exportar desde el núcleo de investigación con `python -m aion.mobile_export po
 | 10 | Proyecto Android iniciado; compilación, pruebas en dispositivo, optimización y APK pendientes |
 
 Las 858 estructuras y 52.789.247.311 parámetros lógicos se mantienen. No son simultáneamente residentes ni entrenados. FP32 completo ~211,16 GB, FP16 ~105,58 GB, INT4 ideal ~26,39 GB. Se necesita perfil selectivo/compacto para teléfono, con cuantización real validada, modelos móviles y presupuesto de memoria. No se ha reducido ni sustituido silenciosamente la arquitectura original. El código Python sigue como núcleo de investigación/exportación independiente de Android. La app no requiere PC conectado para inferencia tras importar el modelo. Para funcionamiento completamente autónomo en el móvil quedan pendientes el entrenamiento local, memoria, percepción, razonamiento y agentes. No se afirma que sea una IA jugable. Todas las tareas anteriores siguen vigentes.
+
+## Actualización 0.10.0
+
+La versión posterior agrega un laboratorio de aprendizaje local independiente y una configuración de GitHub Actions. Véase [informe Fase 10](phase10/README.md) para el estado actual; las cifras y pasos anteriores corresponden a 0.9.1.

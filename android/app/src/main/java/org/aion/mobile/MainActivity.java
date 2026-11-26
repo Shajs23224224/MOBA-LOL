@@ -34,13 +34,14 @@ public class MainActivity extends Activity {
         super.onCreate(state);
         ScrollView scroll=new ScrollView(this);
         LinearLayout layout=new LinearLayout(this); layout.setOrientation(LinearLayout.VERTICAL); layout.setPadding(24,32,24,32);
-        TextView title=new TextView(this); title.setText("AION | Android 0.9.1"); title.setTextSize(26); layout.addView(title);
+        TextView title=new TextView(this); title.setText("AION | Android 0.10.0"); title.setTextSize(26); layout.addView(title);
         ActivityManager manager=(ActivityManager)getSystemService(ACTIVITY_SERVICE);
         TextView detail=new TextView(this); detail.setText("Diagnostico local • sin control de juego\nHeap: "+manager.getMemoryClass()+" MB • CPU: "+Runtime.getRuntime().availableProcessors()+" hilos\n858 estructuras en el nucleo de investigacion; 34.628 parametros en el runtime movil auxiliar."); layout.addView(detail);
         modelButton=button(layout,"Importar pesos .aion",v->pick(1,"application/octet-stream"));
         vectorButton=button(layout,"Importar vector JSON (256)",v->pick(2,"application/json"));
         imageButton=button(layout,"Examinar imagen local",v->pick(3,"image/*"));
         start=button(layout,"INICIAR DIAGNOSTICO",v->runPolicy());
+        button(layout,"APRENDIZAJE LOCAL",v->{if(!busy)startActivity(new Intent(this,LabActivity.class));});
         status=new TextView(this); status.setTextIsSelectable(true); status.setPadding(0,24,0,0); layout.addView(status);
         status.setText("Importa un modelo .aion exportado por AION. El vector sintetico es solo para diagnostico. No hay pesos entrenados incluidos.\nUltimo resultado: "+getPreferences(MODE_PRIVATE).getString("last","ninguno"));
         scroll.addView(layout); setContentView(scroll); updateButtons();

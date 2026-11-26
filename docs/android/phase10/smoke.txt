@@ -1,0 +1,2 @@
+Aceptado | entrenamiento 116, validacion 34 | perdida 1.09861 -> 0.00039 | aciertos 14 -> 34 de 34
+replay=150; restore=exact; corruption=rejected; parameters=771

@@ -1,4 +1,4 @@
-# AION — Android / 0.9.1
+# AION — Android / 0.10.0
 
 Infraestructura ejecutable de investigación. **No es todavía un agente de League of Legends, ni un modelo entrenado.** Esta versión sólo ejecuta diagnóstico y servicios internos. No captura pantalla, no controla juegos, no descarga modelos y no contiene un entrenador ni simulador.
 
@@ -79,3 +79,7 @@ Aprendizaje offline Actor-Critic auxiliar, replay persistente, LoRA, predicción
 ## Destino principal: Android
 
 El producto objetivo es una APK Android autónoma de investigación MOBA, no un launcher Windows. El código Python de las fases 1–9 se conserva como núcleo de investigación/exportación; todavía no se ejecuta completo en Android. Se inicia la migración nativa con el Actor-Critic auxiliar, exportador de pesos e interfaz diagnóstica. Consulte [estado de migración Android](docs/android/README.md). No se ha generado una APK ni validado un dispositivo Android.
+
+## Fase 10 móvil (parcial)
+
+Laboratorio nativo de clasificación y aprendizaje supervisado sin PC, memoria y checkpoint local; flujo CI para APK debug. Consulte [informe Android 0.10.0](docs/android/phase10/README.md). La arquitectura de investigación y sus tareas pendientes se conservan. La APK y el dispositivo requieren validación real.

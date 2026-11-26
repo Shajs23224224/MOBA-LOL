@@ -11,7 +11,7 @@
 | 7 | Estrategia, táctica y economía | Parcial: evaluación MOBA offline verificada; especialización aprendida pendiente |
 | 8 | Aprendizaje continuo durante partidas autorizadas | Parcial: entrenador offline auxiliar verificado con datos sintéticos; entrenamiento de expertos y experiencias reales pendientes |
 | 9 | 32 integradores y 2 políticas finales | Parcial: 34 redes materializadas y pipeline diagnóstico verificado; entrenamiento y calibración pendientes |
-| 10 | Migración Android, interfaz móvil, optimización y pruebas integrales | Iniciada: runtime auxiliar Java verificado en JVM; APK y port completo pendientes |
+| 10 | Migración Android, interfaz móvil, optimización y pruebas integrales | Parcial: Actor-Critic auxiliar y laboratorio móvil verificados en JVM; compilación CI, APK, pruebas físicas y port completo pendientes |
 | Build | APK Android, distribución de pesos móviles y verificación en teléfono | Pendiente |
 
 La fase 1 entrega infraestructura local. El despliegue Ray distribuido y aceleración C++ se integrarán cuando los trabajadores neuronales tengan contratos y pruebas de rendimiento reales. El catálogo no supone que los agentes puedan deliberar ni que el sistema esté entrenado.

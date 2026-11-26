@@ -1,0 +1,44 @@
+name: AION Android debug APK
+on:
+  push:
+    branches: [main]
+    paths: ['android/**', '.github/workflows/android.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: SDK
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: JVM mobile learning test
+        run: |
+          mkdir -p "$RUNNER_TEMP/lab"
+          javac --release 17 -d "$RUNNER_TEMP/lab" android/app/src/main/java/org/aion/mobile/MobileLab.java android/tests/MobileLabProbe.java
+          java -cp "$RUNNER_TEMP/lab" MobileLabProbe "$RUNNER_TEMP/lab/state.bin"
+      - name: Android compile and lint
+        run: gradle -p android --no-daemon :app:assembleDebug :app:lintDebug
+      - name: APK digest
+        run: |
+          cd android/app/build/outputs/apk/debug
+          cp app-debug.apk AION-debug.apk
+          sha256sum AION-debug.apk > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AION-Android-debug
+          path: |
+            android/app/build/outputs/apk/debug/AION-debug.apk
+            android/app/build/outputs/apk/debug/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 14
