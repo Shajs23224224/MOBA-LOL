@@ -1,0 +1,86 @@
+{
+  "scenario": "synthetic low resources and high threat",
+  "derived_labels": [
+    "caution_priority",
+    "high_threat",
+    "low_resources",
+    "recovery_priority",
+    "shopping_possible"
+  ],
+  "ranked_expected": [
+    {
+      "option": "recover",
+      "utility": 1.362
+    },
+    {
+      "option": "explore:safe",
+      "utility": 1.1228
+    },
+    {
+      "option": "hold",
+      "utility": 0.2339
+    },
+    {
+      "option": "buy:a",
+      "utility": 0.06611
+    },
+    {
+      "option": "farm",
+      "utility": -0.50573
+    },
+    {
+      "option": "objective",
+      "utility": -0.90225
+    },
+    {
+      "option": "cooperate",
+      "utility": -1.413
+    },
+    {
+      "option": "explore:risky",
+      "utility": -1.4708
+    }
+  ],
+  "monte_carlo": [
+    {
+      "option": "recover",
+      "utility": 1.346191,
+      "visits": 256
+    },
+    {
+      "option": "explore:safe",
+      "utility": 1.139375,
+      "visits": 256
+    },
+    {
+      "option": "hold",
+      "utility": 0.2375,
+      "visits": 256
+    },
+    {
+      "option": "buy:a",
+      "utility": 0.057764,
+      "visits": 256
+    },
+    {
+      "option": "farm",
+      "utility": -0.392266,
+      "visits": 256
+    },
+    {
+      "option": "objective",
+      "utility": -0.864844,
+      "visits": 256
+    },
+    {
+      "option": "cooperate",
+      "utility": -1.314844,
+      "visits": 256
+    },
+    {
+      "option": "explore:risky",
+      "utility": -1.430313,
+      "visits": 256
+    }
+  ]
+}

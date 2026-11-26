@@ -1,4 +1,4 @@
-# AION — Fases 1–6 / 0.6.0
+# AION — Fases 1–7 / 0.7.0
 
 Infraestructura ejecutable de investigación. **No es todavía un agente de League of Legends, ni un modelo entrenado.** Esta versión sólo ejecuta diagnóstico y servicios internos. No captura pantalla, no controla juegos, no descarga modelos y no contiene un entrenador ni simulador.
 
@@ -63,3 +63,7 @@ Memoria SQLite en ocho categorías, recuperación contextual NumPy con FAISS opc
 ## Fase 6 (prototipo)
 
 Razonamiento lógico y causal explícito, MCTS/UCT, Beam Search, planificación jerárquica y evaluación concurrente. Consulte [informe de Fase 6](docs/phase06/README.md). Se conservan todas las tareas pendientes.
+
+## Fase 7 (prototipo)
+
+Evaluación MOBA offline de recursos, objetivos, compras, rutas y cooperación con modelos explícitos. Consulte [informe de Fase 7](docs/phase07/README.md). Se conservan todas las tareas pendientes.
