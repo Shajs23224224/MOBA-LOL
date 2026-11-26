@@ -33,6 +33,11 @@ jobs:
           mkdir -p "$RUNNER_TEMP/lab"
           javac --release 17 -d "$RUNNER_TEMP/lab" android/app/src/main/java/org/aion/mobile/MobileLab.java android/tests/MobileLabProbe.java
           java -cp "$RUNNER_TEMP/lab" MobileLabProbe "$RUNNER_TEMP/lab/state.bin"
+      - name: JVM cognitive store and council
+        run: |
+          mkdir -p "$RUNNER_TEMP/cognition"
+          javac --release 17 -d "$RUNNER_TEMP/cognition" android/app/src/main/java/org/aion/mobile/{CognitiveStore,MobileCouncil,NeuralPort}.java android/tests/CognitionProbe.java
+          java -cp "$RUNNER_TEMP/cognition" CognitionProbe "$RUNNER_TEMP/cognition/state.bin"
       - name: Android compile and lint
         run: gradle -p android --no-daemon :app:assembleDebug :app:lintDebug
       - name: APK digest

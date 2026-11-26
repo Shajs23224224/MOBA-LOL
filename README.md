@@ -1,4 +1,4 @@
-# AION — Android / 0.10.0
+# AION — Android / 0.10.1
 
 Infraestructura ejecutable de investigación. **No es todavía un agente de League of Legends, ni un modelo entrenado.** Esta versión sólo ejecuta diagnóstico y servicios internos. No captura pantalla, no controla juegos, no descarga modelos y no contiene un entrenador ni simulador.
 
@@ -83,3 +83,7 @@ El producto objetivo es una APK Android autónoma de investigación MOBA, no un 
 ## Fase 10 móvil (parcial)
 
 Laboratorio nativo de clasificación y aprendizaje supervisado sin PC, memoria y checkpoint local; flujo CI para APK debug. Consulte [informe Android 0.10.0](docs/android/phase10/README.md). La arquitectura de investigación y sus tareas pendientes se conservan. La APK y el dispositivo requieren validación real.
+
+## Android 0.10.1
+
+Port de las 34 redes de fusión, lectura secuencial de un experto completo, ocho categorías de memoria y revisión de evidencias local. [Informe de migración](docs/android/phase101/README.md). Todas las fases anteriores y pendientes se conservan.

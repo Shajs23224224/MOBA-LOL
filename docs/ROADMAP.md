@@ -18,3 +18,5 @@ La fase 1 entrega infraestructura local. El despliegue Ray distribuido y acelera
 
 
 Destino corregido a Android. Consulte [matriz de migración](android/README.md). Los requisitos históricos Windows se conservan como documentación de investigación, no como producto final.
+
+Android 0.10.1: paridad JVM de fusión y un experto completo, memoria acotada y revisión de 160 IDs. Port parcial, sin entrenamiento ni validación en dispositivo. Consulte [informe](android/phase101/README.md).

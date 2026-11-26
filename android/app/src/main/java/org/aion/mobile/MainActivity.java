@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
         super.onCreate(state);
         ScrollView scroll=new ScrollView(this);
         LinearLayout layout=new LinearLayout(this); layout.setOrientation(LinearLayout.VERTICAL); layout.setPadding(24,32,24,32);
-        TextView title=new TextView(this); title.setText("AION | Android 0.10.0"); title.setTextSize(26); layout.addView(title);
+        TextView title=new TextView(this); title.setText("AION | Android 0.10.1"); title.setTextSize(26); layout.addView(title);
         ActivityManager manager=(ActivityManager)getSystemService(ACTIVITY_SERVICE);
         TextView detail=new TextView(this); detail.setText("Diagnostico local • sin control de juego\nHeap: "+manager.getMemoryClass()+" MB • CPU: "+Runtime.getRuntime().availableProcessors()+" hilos\n858 estructuras en el nucleo de investigacion; 34.628 parametros en el runtime movil auxiliar."); layout.addView(detail);
         modelButton=button(layout,"Importar pesos .aion",v->pick(1,"application/octet-stream"));
@@ -42,6 +42,7 @@ public class MainActivity extends Activity {
         imageButton=button(layout,"Examinar imagen local",v->pick(3,"image/*"));
         start=button(layout,"INICIAR DIAGNOSTICO",v->runPolicy());
         button(layout,"APRENDIZAJE LOCAL",v->{if(!busy)startActivity(new Intent(this,LabActivity.class));});
+        button(layout,"INTEGRACION COGNITIVA",v->{if(!busy){Intent i=new Intent(this,CognitiveActivity.class);i.putExtra("features",features.clone());float[] a=new float[4];if(model!=null){float[] y=model.infer(features);double max=Math.max(y[0],Math.max(y[1],y[2])),sum=0;for(int k=0;k<3;k++){a[k]=(float)Math.exp(y[k]-max);sum+=a[k];}for(int k=0;k<3;k++)a[k]/=sum;a[3]=y[3];}i.putExtra("actor",a);startActivity(i);}});
         status=new TextView(this); status.setTextIsSelectable(true); status.setPadding(0,24,0,0); layout.addView(status);
         status.setText("Importa un modelo .aion exportado por AION. El vector sintetico es solo para diagnostico. No hay pesos entrenados incluidos.\nUltimo resultado: "+getPreferences(MODE_PRIVATE).getString("last","ninguno"));
         scroll.addView(layout); setContentView(scroll); updateButtons();
