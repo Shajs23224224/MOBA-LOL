@@ -35,7 +35,10 @@ public class MainActivity extends Activity {
         ScrollView scroll=new ScrollView(this);
         LinearLayout layout=new LinearLayout(this); layout.setOrientation(LinearLayout.VERTICAL); layout.setPadding(24,32,24,32);
         android.widget.ImageView logo=new android.widget.ImageView(this); logo.setImageResource(R.drawable.aion_launcher); logo.setContentDescription("AION"); logo.setScaleType(android.widget.ImageView.ScaleType.FIT_CENTER); int size=(int)(120*getResources().getDisplayMetrics().density+.5f); LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(size,size); lp.gravity=android.view.Gravity.CENTER_HORIZONTAL; layout.addView(logo,lp);
-        TextView title=new TextView(this); title.setText("AION | Android 0.10.2"); title.setTextSize(26); layout.addView(title);
+        TextView title=new TextView(this); title.setText("AION | Wild Rift 0.10.3"); title.setTextSize(26); layout.addView(title);
+        TextView target=new TextView(this); target.setText("League of Legends: Wild Rift • objetivo exclusivo Android"); layout.addView(target);
+        button(layout,"ABRIR WILD RIFT",v->{if(!busy)openWildRift();});
+        TextView warning=new TextView(this); warning.setText("Acceso directo al juego. AION no controla la partida. Los modulos de investigacion se ejecutan por separado."); layout.addView(warning);
         ActivityManager manager=(ActivityManager)getSystemService(ACTIVITY_SERVICE);
         TextView detail=new TextView(this); detail.setText("Diagnostico local • sin control de juego\nHeap: "+manager.getMemoryClass()+" MB • CPU: "+Runtime.getRuntime().availableProcessors()+" hilos\n858 estructuras en el nucleo de investigacion; 34.628 parametros en el runtime movil auxiliar."); layout.addView(detail);
         modelButton=button(layout,"Importar pesos .aion",v->pick(1,"application/octet-stream"));
@@ -47,6 +50,15 @@ public class MainActivity extends Activity {
         status=new TextView(this); status.setTextIsSelectable(true); status.setPadding(0,24,0,0); layout.addView(status);
         status.setText("Importa un modelo .aion exportado por AION. El vector sintetico es solo para diagnostico. No hay pesos entrenados incluidos.\nUltimo resultado: "+getPreferences(MODE_PRIVATE).getString("last","ninguno"));
         scroll.addView(layout); setContentView(scroll); updateButtons();
+    }
+    private void openWildRift() {
+        Intent launch=getPackageManager().getLaunchIntentForPackage("com.riotgames.league.wildrift");
+        if(launch==null) {
+            status.setText("Wild Rift no esta instalado o no se encuentra su actividad de inicio. Instala o actualiza el cliente oficial.");
+            return;
+        }
+        try { startActivity(launch); }
+        catch(android.content.ActivityNotFoundException | SecurityException e) { status.setText("No se pudo abrir Wild Rift: "+e.getMessage()); }
     }
     private Button button(LinearLayout layout,String label,View.OnClickListener listener) {
         Button b=new Button(this); b.setText(label); b.setOnClickListener(listener); layout.addView(b); return b;

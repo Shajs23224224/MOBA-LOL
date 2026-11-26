@@ -1,4 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package android:name="com.riotgames.league.wildrift"/>
+    </queries>
     <application android:label="AION" android:icon="@drawable/aion_launcher" android:roundIcon="@drawable/aion_launcher" android:theme="@android:style/Theme.Material.NoActionBar" android:allowBackup="false" android:usesCleartextTraffic="false">
         <activity android:name=".CognitiveActivity" android:exported="false"/>
         <activity android:name=".LabActivity" android:exported="false"/>

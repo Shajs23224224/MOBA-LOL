@@ -1,0 +1,3 @@
+# Android 0.10.3 — Wild Rift
+
+Objetivo fijo: League of Legends: Wild Rift, paquete oficial com.riotgames.league.wildrift. El boton ABRIR WILD RIFT invoca la actividad de inicio del cliente instalado mediante Android PackageManager; se declara visibilidad exclusiva del paquete. No hay selector de juegos. Si falta el cliente o no puede abrirse, se informa del error. Se conservan el logo, el laboratorio y las funciones cognitivas. No se controla el cliente, ni se generan acciones ni recomendaciones en vivo. Las condiciones de Riot prohíben bots no autorizados: https://support.riotgames.com/es-es/riot/events/third-party-applications. Se necesita verificar la apertura en un dispositivo con el juego instalado. La compilación se comprueba en GitHub Actions.
