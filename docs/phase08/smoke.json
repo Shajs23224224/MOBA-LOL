@@ -1,0 +1,22 @@
+{
+  "before": {
+    "logged_reward_ips": -0.32141947746276855,
+    "td_mse": 1.0753309726715088,
+    "prediction_mse": 0.009581075981259346
+  },
+  "after": {
+    "logged_reward_ips": 0.533198356628418,
+    "td_mse": 0.8890559077262878,
+    "prediction_mse": 0.0004148296429775655
+  },
+  "anchor_before": null,
+  "anchor_after": null,
+  "accepted": true,
+  "train_count": 423,
+  "validation_count": 117,
+  "trainable_parameters": 18180,
+  "total_parameters": 34628,
+  "game_control": false,
+  "restored": true,
+  "equal_after_restore": true
+}

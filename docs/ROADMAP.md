@@ -9,7 +9,7 @@
 | 5 | Memoria cognitiva y estado del mundo | Parcial: persistencia y filtro probabilístico verificados; consolidación y modelo neuronal pendientes |
 | 6 | Razonamiento y planificación paralela | Parcial: lógica, causalidad y búsqueda sobre modelos explícitos verificadas; integración aprendida pendiente |
 | 7 | Estrategia, táctica y economía | Parcial: evaluación MOBA offline verificada; especialización aprendida pendiente |
-| 8 | Aprendizaje continuo durante partidas autorizadas | Pendiente |
+| 8 | Aprendizaje continuo durante partidas autorizadas | Parcial: entrenador offline auxiliar verificado con datos sintéticos; entrenamiento de expertos y experiencias reales pendientes |
 | 9 | 32 integradores y 2 políticas finales | Pendiente |
 | 10 | Optimización, interfaz de un botón y pruebas integrales | Pendiente |
 | Build | Instalador de Windows, distribución de pesos y verificación final | Pendiente |
