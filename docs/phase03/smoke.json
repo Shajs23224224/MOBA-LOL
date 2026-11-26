@@ -1,0 +1,63 @@
+{
+  "image": "generated diagnostic RGB image",
+  "shape": [
+    240,
+    640,
+    3
+  ],
+  "ocr": [
+    {
+      "kind": "text",
+      "label": "GOLD",
+      "confidence": 0.96760841,
+      "box": [
+        24,
+        56,
+        179,
+        103
+      ],
+      "source": "tesseract"
+    },
+    {
+      "kind": "text",
+      "label": "1250",
+      "confidence": 0.9647631099999999,
+      "box": [
+        224,
+        56,
+        371,
+        103
+      ],
+      "source": "tesseract"
+    },
+    {
+      "kind": "text",
+      "label": "[|",
+      "confidence": 0.36728015999999997,
+      "box": [
+        28,
+        148,
+        163,
+        213
+      ],
+      "source": "tesseract"
+    }
+  ],
+  "features": 256,
+  "route": {
+    "selected": [
+      "N001"
+    ],
+    "weights": [
+      1.0
+    ],
+    "active_expert_parameters": 64061696,
+    "router_parameters": 211768
+  },
+  "output_length": 256,
+  "finite": true,
+  "trained": false,
+  "game_control": false,
+  "torch": "2.10.0+cpu",
+  "opencv": "4.13.0"
+}
