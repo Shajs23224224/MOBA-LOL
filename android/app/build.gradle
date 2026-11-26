@@ -1,0 +1,13 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'org.aion.mobile'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'org.aion.mobile'
+        minSdk 26
+        targetSdk 35
+        versionCode 901
+        versionName '0.9.1'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}

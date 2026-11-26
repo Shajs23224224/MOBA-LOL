@@ -5,3 +5,10 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+
+# Android
+android/.gradle/
+android/local.properties
+android/**/build/
+*.aion
+*.apk
