@@ -34,7 +34,8 @@ public class MainActivity extends Activity {
         super.onCreate(state);
         ScrollView scroll=new ScrollView(this);
         LinearLayout layout=new LinearLayout(this); layout.setOrientation(LinearLayout.VERTICAL); layout.setPadding(24,32,24,32);
-        TextView title=new TextView(this); title.setText("AION | Android 0.10.1"); title.setTextSize(26); layout.addView(title);
+        android.widget.ImageView logo=new android.widget.ImageView(this); logo.setImageResource(R.drawable.aion_launcher); logo.setContentDescription("AION"); logo.setScaleType(android.widget.ImageView.ScaleType.FIT_CENTER); int size=(int)(120*getResources().getDisplayMetrics().density+.5f); LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(size,size); lp.gravity=android.view.Gravity.CENTER_HORIZONTAL; layout.addView(logo,lp);
+        TextView title=new TextView(this); title.setText("AION | Android 0.10.2"); title.setTextSize(26); layout.addView(title);
         ActivityManager manager=(ActivityManager)getSystemService(ACTIVITY_SERVICE);
         TextView detail=new TextView(this); detail.setText("Diagnostico local • sin control de juego\nHeap: "+manager.getMemoryClass()+" MB • CPU: "+Runtime.getRuntime().availableProcessors()+" hilos\n858 estructuras en el nucleo de investigacion; 34.628 parametros en el runtime movil auxiliar."); layout.addView(detail);
         modelButton=button(layout,"Importar pesos .aion",v->pick(1,"application/octet-stream"));
