@@ -1,0 +1,10 @@
+{
+  "id": "diagnostic-01",
+  "options": ["review", "defer", "hold"],
+  "evidence": [
+    {"id":"e1","source":"source1","agent_id":"A001","option":"review","value":0.8,"confidence":0.9,"risk":0.1},
+    {"id":"e2","source":"source2","agent_id":"A002","option":"review","value":-0.8,"confidence":0.9,"risk":0.1},
+    {"id":"e3","source":"source3","agent_id":"A031","option":"defer","value":0.8,"confidence":0.9,"risk":0.1},
+    {"id":"e4","source":"source4","agent_id":"A060","option":"hold","value":0.8,"confidence":0.9,"risk":0.9}
+  ]
+}
