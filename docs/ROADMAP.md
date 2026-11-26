@@ -6,7 +6,7 @@
 | 2 | 824 módulos PyTorch, materialización selectiva y auditoría | Prototipo verificado; entrenamiento y materialización completa pendientes |
 | 3 | Modelos visuales preentrenados e integración | Parcial: OCR y puente verificados; adaptadores adicionales con contratos probados; pesos externos pendientes |
 | 4 | 160 agentes expertos funcionales | Parcial: evaluadores de evidencia verificados; especialización aprendida pendiente |
-| 5 | Memoria cognitiva y estado del mundo | Pendiente |
+| 5 | Memoria cognitiva y estado del mundo | Parcial: persistencia y filtro probabilístico verificados; consolidación y modelo neuronal pendientes |
 | 6 | Razonamiento y planificación paralela | Pendiente |
 | 7 | Estrategia, táctica y economía | Pendiente |
 | 8 | Aprendizaje continuo durante partidas autorizadas | Pendiente |
