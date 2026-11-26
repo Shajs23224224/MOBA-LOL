@@ -1,0 +1,99 @@
+{
+  "audit": {
+    "fusion": {
+      "intermediate_count": 32,
+      "final_count": 2,
+      "parameters_by_network": {
+        "I01": 78144,
+        "I02": 39300,
+        "I03": 78144,
+        "I04": 39300,
+        "I05": 78144,
+        "I06": 39300,
+        "I07": 78144,
+        "I08": 39300,
+        "I09": 78144,
+        "I10": 39300,
+        "I11": 78144,
+        "I12": 39300,
+        "I13": 78144,
+        "I14": 39300,
+        "I15": 78144,
+        "I16": 39300,
+        "I17": 78144,
+        "I18": 39300,
+        "I19": 78144,
+        "I20": 39300,
+        "I21": 78144,
+        "I22": 39300,
+        "I23": 78144,
+        "I24": 39300,
+        "I25": 78144,
+        "I26": 39300,
+        "I27": 78144,
+        "I28": 39300,
+        "I29": 78144,
+        "I30": 39300,
+        "I31": 78144,
+        "I32": 39300,
+        "F01": 141968,
+        "F02": 142339
+      },
+      "parameters": 2163411,
+      "resident_bytes": 8653644,
+      "training_status": "not_established"
+    },
+    "actor_critic_parameters": 34628,
+    "bank": {
+      "expert_blueprints": 824,
+      "hidden_layers_per_expert": 16,
+      "hidden_width": 2048,
+      "expert_parameters_each": 64061696,
+      "logical_expert_parameters": 52786837504,
+      "router_parameters": 211768,
+      "logical_total_parameters": 52787049272,
+      "resident_experts": [
+        "N259"
+      ],
+      "resident_parameters": 64273464,
+      "meta_blueprint_parameters": 52786837504,
+      "trained_status": "not_established",
+      "resident_weight_bytes": 257093856
+    },
+    "catalog_networks": 858,
+    "logical_total_parameters": 52789247311,
+    "resident_parameter_bytes": 265886012
+  },
+  "routes": {
+    "percepcion_visual": {
+      "selected": [
+        "N038"
+      ],
+      "weights": [
+        1.0
+      ],
+      "active_expert_parameters": 64061696,
+      "router_parameters": 211768
+    },
+    "memoria": {
+      "selected": [
+        "N259"
+      ],
+      "weights": [
+        1.0
+      ],
+      "active_expert_parameters": 64061696,
+      "router_parameters": 211768
+    }
+  },
+  "roles_evaluated": 160,
+  "memory_categories": 8,
+  "subsystem_outputs": 16,
+  "research_candidate": "recover",
+  "requires_review": true,
+  "intent": {
+    "kind": "noop",
+    "observation_id": "moba-0"
+  },
+  "game_control": false
+}

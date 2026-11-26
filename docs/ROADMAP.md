@@ -10,7 +10,7 @@
 | 6 | Razonamiento y planificación paralela | Parcial: lógica, causalidad y búsqueda sobre modelos explícitos verificadas; integración aprendida pendiente |
 | 7 | Estrategia, táctica y economía | Parcial: evaluación MOBA offline verificada; especialización aprendida pendiente |
 | 8 | Aprendizaje continuo durante partidas autorizadas | Parcial: entrenador offline auxiliar verificado con datos sintéticos; entrenamiento de expertos y experiencias reales pendientes |
-| 9 | 32 integradores y 2 políticas finales | Pendiente |
+| 9 | 32 integradores y 2 políticas finales | Parcial: 34 redes materializadas y pipeline diagnóstico verificado; entrenamiento y calibración pendientes |
 | 10 | Optimización, interfaz de un botón y pruebas integrales | Pendiente |
 | Build | Instalador de Windows, distribución de pesos y verificación final | Pendiente |
 
