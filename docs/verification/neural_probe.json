@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "output_shape": [
+    2,
+    4
+  ],
+  "diagnostic_parameters": 212,
+  "production_networks": 0,
+  "trained": false
+}

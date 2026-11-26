@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "aion-core"
+version = "0.1.0"
+description = "AION phase 1 research infrastructure"
+requires-python = ">=3.11,<3.14"
+dependencies = ["pydantic>=2.10,<3", "psutil>=6,<8"]
+[project.optional-dependencies]
+neural = ["torch>=2.6,<3", "safetensors>=0.5,<1"]
+dev = ["pytest>=8,<10"]
+[project.scripts]
+aion = "aion.cli:main"
+[tool.setuptools.packages.find]
+include = ["aion*"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

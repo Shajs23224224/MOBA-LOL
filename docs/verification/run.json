@@ -1,0 +1,10 @@
+{
+  "state": "stopped",
+  "session_id": "203af27719d44929b635162437a77fbf",
+  "device": "cpu",
+  "error": null,
+  "mode": "diagnostics",
+  "game_control": false,
+  "materialized_main_networks": 0,
+  "functional_expert_agents": 0
+}

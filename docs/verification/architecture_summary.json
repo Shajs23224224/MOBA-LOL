@@ -1,0 +1,12 @@
+{
+  "main_count": 824,
+  "intermediate_count": 32,
+  "final_count": 2,
+  "network_count": 858,
+  "agent_count": 160,
+  "main_hidden_units": 27000832,
+  "main_hidden_layers": 13184,
+  "dense_hidden_to_hidden_weights": 51841597440,
+  "materialized_main_networks": 0,
+  "functional_expert_agents": 0
+}

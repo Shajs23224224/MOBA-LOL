@@ -1,0 +1,14 @@
+{
+  "status": "planned_not_downloaded",
+  "models": [
+    {"id":"omniparser_v2","source":"https://huggingface.co/microsoft/OmniParser-v2.0","purpose":"GUI parsing"},
+    {"id":"qwen3_vl_4b","source":"https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct","purpose":"visual reasoning"},
+    {"id":"ui_tars_1_5_7b","source":"https://huggingface.co/ByteDance-Seed/UI-TARS-1.5-7B","purpose":"GUI understanding"},
+    {"id":"rt_detr_r18","source":"https://github.com/lyuwenyu/RT-DETR","purpose":"object detection"},
+    {"id":"grounding_dino","source":"https://github.com/IDEA-Research/GroundingDINO","purpose":"open-vocabulary detection"},
+    {"id":"sam2","source":"https://github.com/facebookresearch/sam2","purpose":"segmentation"},
+    {"id":"bytetrack","source":"https://github.com/ifzhang/ByteTrack","purpose":"tracking"},
+    {"id":"paddleocr","source":"https://github.com/PaddlePaddle/PaddleOCR","purpose":"OCR"}
+  ],
+  "note":"References from the supplied specification; versions, licenses, hashes and compatibility must be verified before downloading or registering weights. No model is installed by this catalog."
+}

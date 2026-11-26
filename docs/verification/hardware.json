@@ -1,0 +1,8 @@
+{
+  "cpu_logical": 5,
+  "ram_total_bytes": 4294967296,
+  "ram_available_bytes": 3674124288,
+  "torch_available": true,
+  "cuda_devices": [],
+  "torch_version": "2.10.0+cpu"
+}

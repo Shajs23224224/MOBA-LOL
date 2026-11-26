@@ -1,0 +1,9 @@
+# Phase 1 intentionally supports diagnostics only.
+data_dir = "../data"
+workers = 2
+max_pending = 32
+min_free_ram_mb = 128
+max_reserved_mb = 256
+device = "auto"
+environment = "diagnostics"
+heartbeat_seconds = 0.2
